@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+
+    <!--Estilo-->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- COMEÇO DO ASIDE -->
+        
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png">
+                    <h2>Aprenda <span>Inglês</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        grid_view
+                    </span> 
+                    <h3>Dashboard</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        groups
+                    </span> 
+                    <h3>Alunos</h3>                         
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        people_outline
+                    </span> 
+                    <h3>Professores</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_add
+                    </span> 
+                    <h3>Inscrições</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        message
+                    </span> 
+                    <h3>Mensagens <span class="message-count">26</span></h3>    
+                                            
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        school
+                    </span> 
+                    <h3>Turmas</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        class
+                    </span> 
+                    <h3>Cursos</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        trending_up
+                    </span> 
+                    <h3>Analytics</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span> 
+                    <h3>Configurações<h3>                        
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span> 
+                    <h3>Sair</h3>                         
+                </a>               
+            </div>
+        </aside>
+        <!-- FIM DO ASIDE -->
+
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <!-- INÍCIO DE VENDAS-->
+                <div class="vendas">
+                    <span class="material-icons-sharp">
+                        analytics
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de vendas</h3>
+                            <h1> R$ 102.320,38</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>                         
+                    </div>
+                    <small class="text-muted">Últimas 24 horas</small>
+                </div>
+                <!-- FIM DE VENDAS -->
+
+                <!-- INÍCIO DE CUSTOS-->
+                <div class="custos">
+                    <span class="material-icons-sharp">
+                        bar_chart
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de vendas</h3>
+                            <h1> R$ 15.686,82</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>20%</p>
+                            </div>
+                        </div>                         
+                    </div>
+                    <small class="text-muted">Últimas 24 horas</small>
+                </div>
+                <!-- FIM DE CUSTOS -->
+
+                <!-- INÍCIO DE LUCRO-->
+                <div class="lucro">
+                    <span class="material-icons-sharp">
+                        stacked_line_chart
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total de vendas</h3>
+                            <h1> R$ 87.232,27</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>                         
+                    </div>
+                    <small class="text-muted">Últimas 24 horas</small>
+                </div>
+                <!-- FIM DE LUCRO -->
+            </div>
+            <!-- FIM DE INSIGHTS -->
+
+            <div class="ordens-recentes">
+                <h2>Ordens Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Número</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Curso Completo I30</td>
+                            <td>000001</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Curso Completo I30</td>
+                            <td>000001</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Curso Completo I30</td>
+                            <td>000001</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Curso Completo I30</td>
+                            <td>000001</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Curso Completo I30</td>
+                            <td>000001</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Curso Completo I30</td>
+                            <td>000001</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Mostrar todas</a>
+            </div>
+        </main>
+        <!-- FIM DE MAIN -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Jefferson</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/3.png" alt="Foto do Perfil">
+                    </div>
+                </div>                
+            </div>
+            <!----------FIM DO TOPO ------------>
+            <div class="recent-updates">
+                <h2>Novidades Recentes</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="img/2.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> recebeu o link do curso hoje</p>
+                            <small class="text-muted">2 Minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="img/3.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> recebeu o link do curso hoje</p>
+                            <small class="text-muted">2 Minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="img/4.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> recebeu o link do curso hoje</p>
+                            <small class="text-muted">2 Minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM DE UPDATES -->
+
+                <div class="sales-analytics">
+                    <h2>Analytics de vendas</h2>
+                    <div class="item offline">
+                        <div class="icon">
+                            <span class="material-icons-sharp">local_mall</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>PEDIDOS OFFLINE</h3>
+                                <small class="text-muted">Últimas 24 horas</small>
+                            </div>
+                            <h5 class="danger">-17%</h5>
+                            <h3>3849</h3>
+                        </div>
+                    </div>
+                    <div class="item online">
+                        <div class="icon">
+                            <span class="material-icons-sharp">shopping_cart</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>PEDIDOS ONLINE</h3>
+                                <small class="text-muted">Últimas 24 horas</small>
+                            </div>
+                            <h5 class="success">+39%</h5>
+                            <h3>6223</h3>
+                        </div>
+                    </div>
+                    <div class="item cliente">
+                        <div class="icon">
+                            <span class="material-icons-sharp">shopping_cart</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>NOVOS ALUNOS</h3>
+                                <small class="text-muted">Últimas 24 horas</small>
+                            </div>
+                            <h5 class="success">+62%</h5>
+                            <h3>23</h3>
+                        </div>
+                    </div>
+                    <div class="item add-product">
+                        <div>
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Adicionar Produtos</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
