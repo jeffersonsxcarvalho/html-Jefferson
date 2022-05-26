@@ -1,0 +1,21 @@
+
+.logo img {
+    height: 50px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.modalLogin{
+    color: #212529;
+}
+
+a.senha {
+    color: #212529;
+    text-decoration: none;
+}
+
+
+
+
+
