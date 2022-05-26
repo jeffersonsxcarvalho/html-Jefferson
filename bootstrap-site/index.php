@@ -1,3 +1,7 @@
+<?php
+  $colorLogin = 'style="color: #343b42"';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -68,36 +72,7 @@
         <div class="modal-content">
           
           <div class="modal-header p-5 pb-4 border-bottom-0">
-            <h2 class="fw-bold mb-0 modalLogin">Entre na área de aluno!</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Entre com teu e-mail</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Entre com tua senha</label>
-              </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-danger" type="submit">Entrar</button>
-              <small class="text-muted"><a href="#" class="senha">Esqueci minha senha!</a></small>
-              <hr class="my-4">             
-            </form>
-          </div>   
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Login Professor -->
-    <div class="modal fade" id="modalLoginP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          
-          <div class="modal-header p-5 pb-4 border-bottom-0">
-            <h2 class="fw-bold mb-0 modalLogin">Entre na área do professor!</h2>
+            <h2 class="fw-bold mb-0 modalLogin" <?php echo $colorLogin; ?>>Entre na área de aluno!</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
@@ -112,7 +87,36 @@
                 <label for="floatingPassword">Entre com tua senha</label>
               </div>
               <button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark" type="submit">Entrar</button>
-              <small class="text-muted"><a href="#" class="senha">Esqueci minha senha!</a></small>
+              <small class="text-muted"><a href="#" class="senha" <?php echo $colorLogin; ?>>Esqueci minha senha!</a></small>
+              <hr class="my-4">             
+            </form>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Login Professor -->
+    <div class="modal fade" id="modalLoginP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h2 class="fw-bold mb-0" <?php echo $colorLogin; ?>>Entre na área do professor!</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Entre com teu e-mail</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Entre com tua senha</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark" type="submit">Entrar</button>
+              <small class="text-muted"><a href="#" class="senha" <?php echo $colorLogin; ?>>Esqueci minha senha!</a></small>
               <hr class="my-4">             
             </form>
           </div>   
@@ -126,7 +130,7 @@
         <div class="modal-content">
           
           <div class="modal-header p-5 pb-4 border-bottom-0">           
-            <h2 class="fw-bold mb-0">Inscreva-se em meu site</h2>
+            <h2 class="fw-bold mb-0" <?php echo $colorLogin; ?>>Inscreva-se em meu site</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
@@ -140,10 +144,10 @@
                 <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Senha</label>
               </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-danger" type="submit">Me inscrever</button>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark" type="submit">Me inscrever</button>
               <small class="text-muted">Ao clicar em Me inscrever você aceita os nossos termos de uso.</small>
               <hr class="my-4">
-              <h2 class="fs-5 fw-bold mb-3">Ou use algumas dessas formas.</h2>
+              <h2 class="fs-5 fw-bold mb-3" <?php echo $colorLogin; ?>>Ou use algumas dessas formas.</h2>
               <button class="w-100 py-2 mb-2 btn btn-outline-info rounded-3" type="submit">
                 <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
                 Entrar com o twitter

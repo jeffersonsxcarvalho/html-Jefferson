@@ -6,8 +6,9 @@
     text-align: center;
 }
 
-.modalLogin{
-    color: #212529;
+h2.modalLogin{
+    color: #343b42;
+    font-size: 16pt;
 }
 
 a.senha {
