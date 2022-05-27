@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      
+      
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  
+
+
+    <!--Estilo-->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- COMEÇO DO ASIDE -->
+        
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png">
+                    <h2>Aprenda <span>Inglês</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person
+                    </span> 
+                    <h3>Perfil</h3>                         
+                </a>
+
+                 <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        people_outline
+                    </span> 
+                    <h3>Professor</h3>                         
+                </a>                
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        message
+                    </span> 
+                    <h3>Mensagens <span class="message-count">26</span></h3>    
+                                            
+                </a>
+               <a href="#">
+                    <span class="material-icons-sharp">
+                        school
+                    </span> 
+                    <h3>Turma</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        class
+                    </span> 
+                    <h3>Curso I30</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        trending_up
+                    </span> 
+                    <h3>Meu progresso</h3>                         
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span> 
+                    <h3>Configurações</h3>                        
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span> 
+                    <h3>Sair</h3>                         
+                </a>               
+            </div>
+        </aside>
+        <!-- FIM DO ASIDE -->
+
+        <main>
+            
+
+            <div class="recent-orders">
+                <h2>Verbo To Be</h2>
+                
+                <iframe src="https://www.youtube.com/embed/DlOCHMt6JWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    
+                </iframe>
+                
+                <a href="#">Mostrar todas</a>
+            </div>
+        </main>
+        <!-- FIM DE MAIN -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp toggle1 active">light_mode</span>
+                    <span class="material-icons-sharp toggle2">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Jefferson</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/1.jpg" alt="Foto do Perfil">
+                    </div>
+                </div>                
+            </div>
+            <!--FIM DO TOPO -->
+            <div class="recent-updates">
+                <h2>Controle seu progresso</h2>
+                <div class="updates">
+                    <form>
+                       <input type="checkbox" id="customCheckbox"/>
+                      <label  for="customCheckbox">Marque se concluiu a aula </label> 
+                    </form>                     
+                </div>
+                <!-- FIM DE UPDATES -->
+
+                <div class="sales-analytics">
+                    <h2>Material para aula</h2>
+                  
+                    <div class="item offline">
+                        <a href="path_to_file" download="proposed_file_name"><div class="icon">
+                            <span class="material-icons-sharp">file_download</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Baixe a aula por aqui!</h3>                        
+                            </div>
+                         </a>    
+                        </div>               
+                                       
+                    </div>
+
+                    <div class="item audios">
+                        <a href="https://mdbootstrap.com/education/bootstrap/admin-dashboard-lesson-9/" target="_blank"><div class="icon">
+                            <span class="material-icons-sharp">audiotrack</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Acesse o audio 1.1</h3>                        
+                            </div>
+                         </a>    
+                        </div>               
+                                       
+                    </div>
+
+                    <div class="item audios">
+                        <a href="https://mdbootstrap.com/education/bootstrap/admin-dashboard-lesson-9/" target="_blank"><div class="icon">
+                            <span class="material-icons-sharp">audiotrack</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Acesse o audio 1.2</h3>                        
+                            </div>
+                         </a>    
+                        </div>               
+                                       
+                    </div>
+
+                    <div class="item audios">
+                        <a href="https://mdbootstrap.com/education/bootstrap/admin-dashboard-lesson-9/" target="_blank"><div class="icon">
+                            <span class="material-icons-sharp">audiotrack</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Acesse o audio 1.3</h3>                        
+                            </div>
+                         </a>    
+                        </div>               
+                                       
+                    </div>
+                    
+
+                    <div class="item audios">
+                        <a href="https://mdbootstrap.com/education/bootstrap/admin-dashboard-lesson-9/" target="_blank"><div class="icon">
+                            <span class="material-icons-sharp">audiotrack</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Acesse o audio 1.4</h3>                        
+                            </div>
+                         </a>    
+                        </div>               
+                                       
+                    </div>
+
+                    <div class="item audios">
+                        <a href="https://mdbootstrap.com/education/bootstrap/admin-dashboard-lesson-9/" target="_blank"><div class="icon">
+                            <span class="material-icons-sharp">audiotrack</span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Acesse o audio 1.5</h3>                        
+                            </div>
+                         </a>    
+                        </div>               
+                                       
+                    </div>
+                   
+                    <div class="item add-product">
+                        <div>
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Adicionar Produtos</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Estilo-->
+    <script src="dashboard.js"></script>
+</body>
+</html>
