@@ -542,6 +542,13 @@ main iframe {
     margin-bottom: 1rem;
 }
 
+
+/* = SEPARAR A BARRA DE PROGRESSO DO CHECK =*/
+
+.right .recent-updates .updates form {
+    margin-bottom: 10px;
+}
+
 /* ================= SALES ANALYTICS =========== */
 
 .right .sales-analytics {

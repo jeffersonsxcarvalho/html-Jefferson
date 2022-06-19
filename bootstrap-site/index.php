@@ -1,5 +1,22 @@
 <?php
-  $colorLogin = 'style="color: #343b42"';
+  session_start();
+  require_once('../../jeffersonnit-dashboard/CLASSES/usuarios.php');
+  $u = new Usuario;
+  
+  //$colorLogin = 'style="color: #343b42"';
+
+ 
+
+  // acesso ao banco de dados
+
+  $nome = 'jeffersonnit';
+  $host = 'localhost';
+  $user = 'root';
+  $senhabd = '';
+
+  
+  
+
 ?>
 
 <!DOCTYPE html>
@@ -77,13 +94,13 @@
           </div>
 
           <div class="modal-body p-5 pt-0">
-            <form class="">
+            <form method="post">
               <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Entre com teu e-mail</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <input type="password" name="senha" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Entre com tua senha</label>
               </div>
               <button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark" type="submit">Entrar</button>
@@ -94,6 +111,39 @@
         </div>
       </div>
     </div>
+
+<?php
+
+    if(isset($_POST['email'])){
+    
+
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+
+        $u->conectar($nome, $host, $user, $senhabd);
+
+        if($u->msgErro != ""){
+          echo 'erro ao conectar';
+        }
+
+          if($u->logarAluno($email, $senha)){
+
+          //header('location: ../../jeffersonnit-dashboard ');
+
+        /* echo ' <script>
+                window.location.replace("../../jeffersonnit-dashboard/aluno.php");
+            </script>';*/
+
+            echo 'Hello';
+
+          } else{
+            echo 'Senha incorreta';
+          }  
+      
+    }
+  ?>
+
+   
 
     <!-- Modal Login Professor -->
     <div class="modal fade" id="modalLoginP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -123,6 +173,17 @@
         </div>
       </div>
     </div>
+
+    <form method=post>
+      <input type=submit name='destroy' value=destroy>
+    </form>
+    
+
+    <?php
+      if(isset($_POST['destroy'])){
+          session_destroy();
+      }
+    ?>
 
     <!-- Modal Inscreva-se -->
     <div class="modal fade" id="modalSignUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -172,3 +233,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
+
